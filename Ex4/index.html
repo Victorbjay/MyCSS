@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <!-- Left side content -->
+            <div class="left-side">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Logo" class="logo" />
+                    <p class="title">For Individuals</p>
+                </div>
+                <p class="description">Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.</p>
+            </div>
+
+            <!-- Right side form content -->
+            <div class="right-side">
+                <form action="#" method="POST">
+                    <!-- First Name and Last Name -->
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" value="Tolu" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" />
+                        </div>
+                    </div>
+
+                    <!-- Gender and Date of Birth -->
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select here</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required />
+                        </div>
+                    </div>
+
+                    <!-- Weight and Height -->
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="weight">Weight (KG)</label>
+                            <input type="text" id="weight" name="weight" placeholder="Enter Weight" />
+                        </div>
+                        <div class="input-field">
+                            <label for="height">Height (CM)</label>
+                            <input type="text" id="height" name="height" placeholder="Enter height here.." />
+                        </div>
+                    </div>
+
+                    <!-- Activity Level and Password -->
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="activity-level">Activity Level</label>
+                            <select id="activity-level" name="activity-level" required>
+                                <option value="">Select here</option>
+                                <option value="High">High</option>
+                                <option value="Low">Low</option>
+                                <option value="medium">Medium</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required/>
+                        </div>
+                    </div>
+
+                    <!-- Register Button -->
+                    <div class="button-group">
+                        <button type="submit" class="register-button">Register</button>
+                    </div>
+
+                    <!-- Terms & Privacy -->
+                    <p class="terms">
+                        By clicking Register, you agree to our <a href="#" class="terms-link">Terms of Use</a> and our <a href="#" class="terms-link">Privacy Policy</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

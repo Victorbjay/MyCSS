@@ -1,0 +1,136 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    background-color: #F4F7FB;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    width: 100%;
+}
+
+.form-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: row; /* Ensures landscape layout */
+}
+
+.left-side {
+    background-color: #F4F7FB;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 2rem;
+    color: #4C4F60;
+    font-weight: 600;
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    color: #4C4F60;
+}
+
+.right-side {
+    padding: 2rem;
+    width: 50%;
+}
+
+.input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap; /* Allow inputs to wrap within the group */
+}
+
+.input-field {
+    width: 100%;
+    max-width: 48%; /* Ensures proper width of inputs in landscape */
+
+}
+
+.input-field label {
+    font-size: 0.875rem;
+    color: #4C4F60;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-field input,
+.input-field select {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #F4F7FB;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #4C4F60;
+}
+
+.input-field input::placeholder {
+    color: #4C4F60;
+}
+
+.button-group {
+    margin-bottom: 1.5rem;
+}
+
+.register-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #00BFAE;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #00A38C;
+}
+
+.terms {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #4C4F60;
+}
+
+.terms-link {
+    color: #00BFAE;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
