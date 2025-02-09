@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1rem;
+    padding: 1rem; /* Reduced padding for mobile */
     width: 100%;
 }
 
@@ -25,12 +25,12 @@ body {
     border-radius: 0.75rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    flex-direction: row; /* Ensures landscape layout */
+    flex-direction: row; /* Landscape layout for desktop */
 }
 
 .left-side {
     background-color: #F4F7FB;
-    padding: 2rem;
+    padding: 1.5rem; /* Reduced padding for mobile */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -49,19 +49,19 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Reduced font size for mobile */
     color: #4C4F60;
     font-weight: 600;
 }
 
 .description {
     margin-top: 1rem;
-    font-size: 1.125rem;
+    font-size: 1rem; /* Reduced font size for mobile */
     color: #4C4F60;
 }
 
 .right-side {
-    padding: 2rem;
+    padding: 1.5rem; /* Reduced padding for mobile */
     width: 50%;
 }
 
@@ -75,7 +75,6 @@ body {
 .input-field {
     width: 100%;
     max-width: 48%; /* Ensures proper width of inputs in landscape */
-
 }
 
 .input-field label {
@@ -133,4 +132,39 @@ body {
 
 .terms-link:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .form-wrapper {
+        flex-direction: column; /* Stack left and right sides vertically */
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%; /* Full width for mobile */
+        padding: 1rem; /* Reduced padding for mobile */
+    }
+
+    .input-group {
+        flex-direction: column; /* Stack inputs vertically */
+        gap: 0.5rem; /* Reduce gap between inputs */
+    }
+
+    .input-field {
+        max-width: 100%; /* Full width for inputs on mobile */
+    }
+
+    .title {
+        font-size: 1.25rem; /* Smaller font size for mobile */
+    }
+
+    .description {
+        font-size: 0.875rem; /* Smaller font size for mobile */
+    }
+
+    .logo {
+        height: 2.5rem; /* Smaller logo for mobile */
+        width: 2.5rem;
+    }
 }
