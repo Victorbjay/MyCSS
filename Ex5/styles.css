@@ -251,3 +251,52 @@ h2 {
   padding: 20px;
   text-align: center;
 }
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-container ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-contain {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content-left,
+  .content-right {
+    width: 100%;
+  }
+
+  .content-right {
+    margin-top: 20px;
+  }
+
+  .name-form {
+    flex-direction: column;
+  }
+
+  .email-form {
+    width: 100%;
+  }
+
+  .checkout-form input,
+  .checkout-card input {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+}

@@ -1,52 +1,45 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
 }
 
-header {
-  text-align: left;
-  padding-left: 30%;
-}
-
 .container {
   padding: 50px 30px;
-  width: fit-content;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+header {
+  text-align: left;
+  padding-left: 300px; /* Match the margin-left of .info-card */
 }
 
 .company-name {
   color: #333;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 38.4px;
-  position: relative;
-  right: 100px;
+  font-size: 2rem; /* Relative unit */
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .tagline {
-  font-size: 20px;
-  height: 60px;
-  line-height: 30px;
+  font-size: 1.25rem; /* Relative unit */
+  line-height: 1.5;
   margin-top: 10px;
-  position: relative;
-  right: 100px;
-  width: 415px;
+  max-width: 600px; /* Limit width for readability */
 }
 
 .highlight {
-  color: #2c9c76;
-  /* green color for highlighting */
-
+  color: #2c9c76; /* Green color for highlighting */
 }
 
 .info-section {
   border-radius: 8px;
   background-color: #999999;
   margin-top: 50px;
-  margin: auto;
   padding: 50px;
 }
 
@@ -54,30 +47,65 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  height: 312px;
-  max-width: 808px;
-  margin-left: 232px;
-  margin-right: 232px;
   padding: 20px;
-  padding-bottom: 40px;
+  margin-left: 232px; /* Shift to the right */
+  margin-right: 232px; /* Shift to the left */
+  max-width: 808px; /* Limit width for readability */
 }
 
 .highlighted-heading {
-  background-color: #f3c74a;
-  /* yellow background for the heading */
-  bottom: 20px;
-  border-style: inset;
+  background-color: #f3c74a; /* Yellow background for the heading */
   color: #333;
-  font-size: 26px;
+  font-size: 1.625rem; /* Relative unit */
   padding: 10px;
-  position: relative;
-  right: 30px;
-  width: fit-content;
-  z-index: 1;
+  display: inline-block; /* Make the heading fit its content */
+  margin-bottom: 20px; /* Space below the heading */
+  margin-left: -25px;
+  margin-top: 0;
 }
 
+  
 .info-text {
-  font-size: 1.25rem;
-  line-height: 1.875;
-  margin-top: 20px;
+  font-size: 1rem; /* Relative unit */
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  header {
+    padding-left: 20px; /* Reduce padding for mobile */
+  }
+
+  .company-name {
+    font-size: 1.75rem; /* Smaller font size for mobile */
+  }
+
+  .tagline {
+    font-size: 1rem; /* Smaller font size for mobile */
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .info-section {
+    padding: 10px;
+  }
+
+  .info-card {
+    margin-left: 20px; /* Reduce margin for mobile */
+    margin-right: 20px; /* Reduce margin for mobile */
+    padding: 15px;
+  }
+
+  .highlighted-heading {
+    font-size: 1.25rem; /* Smaller font size for mobile */
+    padding: 8px;
+  }
+
+  .info-text {
+    font-size: 0.875rem; /* Smaller font size for mobile */
+  }
 }
